@@ -874,8 +874,8 @@ def QGQ_Plot(func,coeffs,scen,Q2,delt,eps,rep,target,grain,cmap,levels):
 def FFT_model_params(flav,Q2,rep,target,delt,eps,a46357,n):
 
     #Bickerton PhD thesis (2020)
-#     d2u = -0.00365
-#     d2d = 0.
+    #d2u = -0.00365
+    #d2d = 0.
 
     #2111.08306
     d2u = 0.026

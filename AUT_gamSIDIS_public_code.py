@@ -27,7 +27,6 @@ matplotlib.rc('text.latex',preamble=r"\usepackage{amsmath}")
 #21: 0 (g)    2: 1 (u)   -2: 2 (ubar)   1: 3 (d)   -1: 4 (dbar)    3: 5 (s)    -3: 6 (sbar)
 #                                       4: 7 (c)    -4: 8 (cbar)   5: 9 (b)    -5: 10 (bbar)
 f1 = lhapdf.mkPDFs("CT18NLO")
-h1 = lhapdf.mkPDFs("JAM22-transversity_proton_lo") # Note: only u and d flavors available
 f1Tperp = lhapdf.mkPDFs("JAM22-sivers_proton_lo_qbar") # Note: u, d, ubar=dbar flavors available
 
 def p2n(p):
@@ -41,13 +40,6 @@ def get_f1(x,Q2,target,rep): # This returns an array giving proton f1(x) for the
     if target == 'n': f1arr=p2n(np.array(f1arr))
     if target == 'He3' : f1arr=(2./3.) * np.array(f1arr) + (1./3.) * p2n(np.array(f1arr))
     return np.array(f1arr)
-
-def get_h1(x,Q2,rep,target): # This returns an array giving proton h1(x) for the various quark flavors
-    h1arr=[]
-    for i in [21,2,-2,1,-1,3,-3,4,-4,5,-5]:
-        h1arr.append(h1[rep].xfxQ2(i,x,Q2)/x)
-    if target == 'n': h1arr=p2n(np.array(h1arr))
-    return np.array(h1arr)
 
 def get_f1Tperp(x,Q2,rep,target): # This returns an array giving proton f1Tperp(x) for the various quark flavors
     f1Tperparr=[]

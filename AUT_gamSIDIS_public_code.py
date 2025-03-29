@@ -1,3 +1,28 @@
+import os,sys
+import numpy as np
+import matplotlib.pyplot as plt
+import pylab as py
+import pandas as pd
+from scipy.integrate import quad, fixed_quad, dblquad
+from scipy import stats
+import matplotlib.colors as colz
+import matplotlib.cm as cms
+import matplotlib.gridspec as gridspec
+import matplotlib.colors as colz
+import matplotlib.cm as cms
+import itertools
+import math
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+import lhapdf
+
+import matplotlib
+from matplotlib import rcParams
+# #matplotlib.use('Agg')
+matplotlib.rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+matplotlib.rcParams["text.usetex"] = True
+matplotlib.rc('text.latex',preamble=r"\usepackage{amsmath}")
+
+
 #LHAPDF --> JAM flavor conversion
 #21: 0 (g)    2: 1 (u)   -2: 2 (ubar)   1: 3 (d)   -1: 4 (dbar)    3: 5 (s)    -3: 6 (sbar)
 #                                       4: 7 (c)    -4: 8 (cbar)   5: 9 (b)    -5: 10 (bbar)

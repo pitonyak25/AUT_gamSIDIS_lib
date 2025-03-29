@@ -871,7 +871,7 @@ def QGQ_Plot(func,coeffs,scen,Q2,delt,eps,rep,target,grain,cmap,levels):
     plt.savefig(f'gallery/{func}_scen{scen}.pdf',bbox_inches='tight')
     plt.show()
 
-def FFT_model_parms(flav,Q2,rep,target,delt,eps,a46357,n):
+def FFT_model_params(flav,Q2,rep,target,delt,eps,a46357,n):
 
     #Bickerton PhD thesis (2020)
 #     d2u = -0.00365

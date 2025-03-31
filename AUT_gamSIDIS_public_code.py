@@ -1192,7 +1192,7 @@ def xBxBtilde(s,phi_s,phi_prime,phi_gam,pgam_grain,etagam_grain,rep,pgamin,pgama
         else:
             figam = phi_gam
 
-        sqrts = np.int(np.sqrt(s))
+        sqrts = int(np.sqrt(s))
 
         axs.set_xlabel(r'\boldmath{$x_B$}',fontsize=14)
         axs.set_ylabel(r'\boldmath{$\tilde{x}_B$}',fontsize=14)

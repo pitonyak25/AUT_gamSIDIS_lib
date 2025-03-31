@@ -1061,11 +1061,11 @@ def AUTSIDIS_plot(s,phi_s,phi_prime,phi_gam,pgam_grain,etagam_grain,rep,pgamin,p
 
         rs = np.sqrt(s)
         for _indx in axisindx:
-            if _indx in [(1,0),(2,0),(3,0),(0,1),(4,1),(5,1)] and rs<30: axs[_indx].set_yticks(np.linspace(1,pgamax,num = 4).tolist(),fontsize=12)
-            elif _indx in [(0,0),(1,0),(2,0),(3,0),(4,0),(5,0)] and rs>100: axs[_indx].set_yticks(np.linspace(1,pgamax,num = 4).tolist(),fontsize=12)
-            elif _indx in [(1,0),(2,0),(3,0),(4,0),(5,0)] and rs>30 and rs<100: axs[_indx].set_yticks(np.linspace(1,pgamax,num = 4).tolist(),fontsize=12)
+            if _indx in [(1,0),(2,0),(3,0),(0,1),(4,1),(5,1)] and rs<30: axs[_indx].set_yticks(np.linspace(1,pgamax,num = 4).tolist())
+            elif _indx in [(0,0),(1,0),(2,0),(3,0),(4,0),(5,0)] and rs>100: axs[_indx].set_yticks(np.linspace(1,pgamax,num = 4).tolist())
+            elif _indx in [(1,0),(2,0),(3,0),(4,0),(5,0)] and rs>30 and rs<100: axs[_indx].set_yticks(np.linspace(1,pgamax,num = 4).tolist())
             else:
-                axs[_indx].set_yticks(np.linspace(1,pgamax,num = 4).tolist(),fontsize=12)
+                axs[_indx].set_yticks(np.linspace(1,pgamax,num = 4).tolist())
                 axs[_indx].set_yticklabels(['','','',''])
 
 

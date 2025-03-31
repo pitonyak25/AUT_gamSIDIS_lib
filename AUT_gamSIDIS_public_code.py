@@ -975,7 +975,7 @@ def cartesianator(s,phi_s,pprim,etaprim,phi_prime,phi_gam,pgam_grain,etagam_grai
 #     plt.scatter(xb_array,xbp_array)
     return [etagamfinals, pgamfinals, points1]
 
-def AUTSIDIS_plot(s,phi_s,phi_prime,phi_gam,pgam_grain,etagam_grain,rep,pgamin,pgamax,etaga_min,etaga_max,index,pprimslist,etaprimslist,vmin,vmax,As,Bs,scen):
+def AUTSIDIS_plot(s,phi_s,phi_prime,phi_gam,pgam_grain,etagam_grain,rep,pgamin,pgamax,etaga_min,etaga_max,pprimslist,etaprimslist,vmin,vmax,As,Bs,scen):
 
         dictofpprim = {}
         pprims = pprimslist
@@ -1145,7 +1145,7 @@ def xBcartesianator(s,phi_s,pprim,etaprim,phi_prime,phi_gam,pgam_grain,etagam_gr
 #     plt.scatter(xb_arr,xbp_arr)
     return [etagamfinals, pgamfinals, xb_arr, xbp_arr, points1]
 
-def xBxBtilde(s,phi_s,phi_prime,phi_gam,pgam_grain,etagam_grain,rep,pgamin,pgamax,etaga_min,etaga_max,index,pprimslist,etaprimslist,vmin,vmax,As,Bs,scen,binsize):
+def xBxBtilde(s,phi_s,phi_prime,phi_gam,pgam_grain,etagam_grain,rep,pgamin,pgamax,etaga_min,etaga_max,pprimslist,etaprimslist,vmin,vmax,As,Bs,scen,binsize):
 
         dictofpprim = {}
         pprims = pprimslist

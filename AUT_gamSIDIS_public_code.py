@@ -1093,7 +1093,7 @@ def AUTSIDIS_plot(s,phi_s,phi_prime,phi_gam,pgam_grain,etagam_grain,rep,pgamin,p
         else:
             figam = phi_gam
 
-        sqrts = np.int(np.sqrt(s))
+        sqrts = int(np.sqrt(s))
         text = r'$\boldsymbol{{ \sqrt{{s}} = {sz} \, \rm GeV,\ \phi ^{{\prime}} = {phip},\ \phi^{{\gamma}} = {phigam},\ \rm Scenario \ {zcen} }}$'.format(sz=sqrts,phip=fiprime,phigam=figam,zcen=scen)
 
         outax[1,0].text(4.35,1.02,text,size=16)

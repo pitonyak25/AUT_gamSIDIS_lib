@@ -1049,7 +1049,7 @@ def AUTSIDIS_plot(s,phi_s,phi_prime,phi_gam,pgam_grain,etagam_grain,rep,pgamin,p
             etap = primes[i][1]
             ptp = primes[i][0]
             x,y,c= primedict[ptp,etap][0], primedict[ptp,etap][1], primedict[ptp,etap][2]
-            axs[axisindx[i]].set_xticks([-1.5,0,1.5,3],fontsize=12)
+            axs[axisindx[i]].set_xticks([-1.5,0,1.5,3])
             axs[axisindx[i]].tick_params('x', direction='in')
             axs[axisindx[i]].set_xlim(-2.25,3.5)
             axs[axisindx[i]].set_ylim(-0.5,pgamax+2.5)

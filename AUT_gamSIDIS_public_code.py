@@ -871,15 +871,7 @@ def QGQ_Plot(func,coeffs,scen,Q2,delt,eps,rep,target,grain,cmap,levels):
     plt.savefig(f'gallery/{func}_scen{scen}.pdf',bbox_inches='tight')
     plt.show()
 
-def FFT_model_params(flav,Q2,rep,target,delt,eps,a46357,n):
-
-    #Bickerton PhD thesis (2020)
-    #d2u = -0.00365
-    #d2d = 0.
-
-    #2111.08306
-    d2u = 0.026
-    d2d = -0.0086
+def FFT_model_params(flav,Q2,rep,target,delt,eps,a46357,d2u,d2d,n):
 
     if flav=='u':iflav=1
     if flav=='d':iflav=3

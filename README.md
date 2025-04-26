@@ -1,6 +1,9 @@
 # $A_{UT}^{\gamma {\rm SIDIS}}$ library
 
 This repository contains results of the paper
+
+# **Reference:** arXiv:2504.XXXXX
+
 # **Authors**
 * Michael Harris
 * Jacob Marsh

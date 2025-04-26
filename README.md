@@ -1,4 +1,4 @@
-# AUT_gamSIDIS_lib
+# $A_{UT}^{\gamma {\rm SIDIS}}$ library
 
 This repository contains results of the paper
 # **Authors**

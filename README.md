@@ -2,7 +2,7 @@
 
 This repository contains results of the paper
 
-# **Reference:** arXiv:2504.XXXXX
+# **Reference:** arXiv:2505.02711
 
 # **Authors**
 * Michael Harris
@@ -13,7 +13,7 @@ This repository contains results of the paper
 * Daniel Rein
 * Marc Schlegel
 
-#**Reference:** arXiv:2504.XXXXX
+#**Reference:** arXiv:2505.02711
 
 You are welcome to run an example notebook:
 
